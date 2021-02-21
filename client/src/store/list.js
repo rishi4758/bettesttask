@@ -51,6 +51,7 @@ const actions = {
     };
 
     // const res = await editList(data);
+
     context.commit(EDIT_LIST_ITEM, data);
   },
   [INSERT_COMMENT]: async (context, data) => {
@@ -96,6 +97,7 @@ const mutations = {
       priority: data.priority,
     };
 
+    console.log(state.list[index] + "index has changed");
     state.List[index] = obj;
   },
   [ADD_COMMENT]: (state, data) => {

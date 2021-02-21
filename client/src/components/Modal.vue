@@ -1,6 +1,6 @@
 <template>
   <div class="modal">
-    <div style="height:100%;width:100%;" v-on:click="set_modal">
+    <div v-on:click="set_modal">
       <Blur></Blur>
     </div>
 
